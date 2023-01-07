@@ -49,15 +49,15 @@ const ImageUpload = (props) => {
       <div
         className="image-upload__preview"
         style={{
-          border: !isValid ? "1px dashed #ccc" : "none",
+          border: !isValid ? "2.5px dashed #ccc" : "none",
         }}
         onClick={pickImageHandler}
       >
         {previewUrl && <img src={previewUrl} alt="Preview" />}
         {!previewUrl && (
           <p>
-            {/* {!isValid && <p>{"Error! Please pick an image."}</p>} */}
-            <span className="add-sign">+</span> Please pick an image.
+            <span className="add-sign">+</span>
+            Click here to pick an image from your computer.
           </p>
         )}
       </div>

@@ -28,8 +28,6 @@ h1 {
 
 .button {
   position: fixed;
-  left: 92%;
-  top: 85%;
   width: 60px;
   height: 60px;
   background-color: #c2fbd7;
@@ -54,4 +52,14 @@ h1 {
     rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
     rgba(44, 187, 99, 0.25) 0 16px 32px;
   transform: translateY(2px) rotate(-1deg);
+}
+
+.add {
+  left: 92%;
+  top: 74%;
+}
+
+.download {
+  left: 92%;
+  top: 85%;
 }

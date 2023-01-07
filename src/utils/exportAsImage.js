@@ -7,17 +7,16 @@ const exportAsImage = async (element, imageFileName) => {
 };
 
 const downloadImage = (blob, fileName) => {
-  const fakeLink = window.document.createElement("a");
-  fakeLink.style = "display:none;";
-  fakeLink.download = fileName;
+  const downloadLink = window.document.createElement("a");
+  downloadLink.style = "display:none;";
+  downloadLink.download = fileName;
+  downloadLink.href = blob;
 
-  fakeLink.href = blob;
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
 
-  document.body.appendChild(fakeLink);
-  fakeLink.click();
-  document.body.removeChild(fakeLink);
-
-  fakeLink.remove();
+  document.body.removeChild(downloadLink);
+  downloadLink.remove();
 };
 
 export default exportAsImage;

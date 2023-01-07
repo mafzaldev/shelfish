@@ -16,16 +16,11 @@ function App() {
   return (
     <div className="app-container">
       <h1>Movies Showcase</h1>
-      <button
-        className="button"
-        style={{ left: "92%", top: "74%" }}
-        role="button"
-        onClick={moviesHandler}
-      >
+      <button className="button add" role="button" onClick={moviesHandler}>
         <img src="https://img.icons8.com/ios-filled/35/null/plus-math.png" />
       </button>
       <button
-        className="button"
+        className="button download"
         role="button"
         onClick={() => exportAsImage(exportRef.current, "MoviesShowcase")}
       >
