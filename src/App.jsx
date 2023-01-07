@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Movies Showcase</h1>
+      <h1>Artistic Arrangements</h1>
       <button className="button add" role="button" onClick={moviesHandler}>
         <img src="https://img.icons8.com/ios-filled/35/null/plus-math.png" />
       </button>
