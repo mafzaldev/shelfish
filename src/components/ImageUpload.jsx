@@ -46,7 +46,13 @@ const ImageUpload = (props) => {
         accept=".jpg,.png,.jpeg"
         onChange={pickedHandler}
       />
-      <div className="image-upload__preview" onClick={pickImageHandler}>
+      <div
+        className="image-upload__preview"
+        style={{
+          border: !isValid ? "1px dashed #ccc" : "none",
+        }}
+        onClick={pickImageHandler}
+      >
         {previewUrl && <img src={previewUrl} alt="Preview" />}
         {!previewUrl && (
           <p>

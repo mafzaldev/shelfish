@@ -1,10 +1,57 @@
 .app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Racing Sans One", cursive;
+  user-select: none;
+}
+
+.movies-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
+  justify-content: center;
   grid-gap: 20px;
   padding: 20px;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #fff;
   background-color: #242424;
+}
+
+.button {
+  position: fixed;
+  left: 92%;
+  top: 85%;
+  width: 60px;
+  height: 60px;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  border: 0;
+  text-decoration: none;
+  user-select: none;
+  transition: all 250ms;
+}
+
+.button:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: translateY(2px) rotate(-1deg);
 }
